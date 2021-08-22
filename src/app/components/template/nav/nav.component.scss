@@ -1,0 +1,51 @@
+.menu {
+    height: 120vh;
+    position: fixed;
+    width: 17.5%;
+    min-width: 250px;
+    background-color: #060c13;
+
+    .title {
+        box-shadow: 0 0 5px rgb(255, 255, 255);
+        height: 90px;
+
+        h3 {
+            color: #fff;
+            font-family: Quicksand, Georgia, Times New Roman, Times, serif;
+            padding-left: 110px !important;
+            padding-top: 40px;
+        }
+    }
+}
+
+.vertical-menu{
+
+margin-top: 50px;
+
+}
+
+.vertical-menu a {
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: black;
+
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    background-color: white;
+    width: 85%;
+    position: fixed;
+    top: -10px;
+    left: 300px;
+    height: 100px;
+}

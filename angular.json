@@ -96,7 +96,14 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+             
+                "node_modules/apexcharts/dist/apexcharts.min.js"
+              
+
+
+            ]
           }
         },
         "lint": {
@@ -127,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "my-app"
+  "defaultProject": "my-app",
+  "cli": {
+    "analytics": "63afa7e5-6a37-4f6e-9337-e89cf3002791"
+  }
 }

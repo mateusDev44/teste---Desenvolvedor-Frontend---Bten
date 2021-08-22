@@ -1,0 +1,78 @@
+<div id="bg">
+
+    <img src="./assets/img/fundo.jpg" alt="" />
+
+
+</div>
+
+<div class="body">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <form class="box" [formGroup]="loginForm">
+                        <h1>Login</h1>
+                        <p class="text-muted"> Faça seu Login</p>
+                        <input type="text" id="input" name="" placeholder="Email" formControlName="LOGIN_USUARIO">
+
+                        <input type="password" id="input" name="" placeholder="Senha" formControlName="SENHA_USUARIO">
+
+                        <a class="forgot text-muted" (click)="open(content)" style="cursor: pointer;">Não tem Login
+                            ?</a>
+                        <button class="btn" (click)="login()">
+                            Login
+                        </button>
+                        <h4 *ngIf='invalid === true' style="color: red;">Preencha os Campos corretamente</h4>
+                        <h4 *ngIf='usuario === true' style="color: red;">Usuário não encontrado</h4>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Cadastre - se</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="card">
+        <form class="box-form" [formGroup]="Cadastro">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="NOME"
+                        placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" formControlName="EMAIL" id="exampleFormControlInput1"
+                        placeholder="Digite seu Email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" formControlName="SENHA"
+                        placeholder="Digite uma Senha">
+                </div>
+                <button type="button" class="btn btn-dark" (click)='Cadastrar()'>Cadastrar - se</button>
+
+            </div>
+
+            <p *ngIf='invalidDados === true' style="color: red; margin-top: 20px; text-align: center;"
+            >Preencha os Campos corretamente</p>
+           
+        </form>
+
+    </div>
+
+</ng-template>

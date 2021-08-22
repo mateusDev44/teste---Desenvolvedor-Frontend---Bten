@@ -1,0 +1,53 @@
+<div class="menu">
+
+    <div class="title">
+
+        <h3>Menu</h3>
+
+        <div class="vertical-menu">
+            <a href="#" class="active">
+                <i class="bi bi-house-door"></i>
+                <span style="padding-left: 10px;"><strong>Home</strong></span></a>
+            <a (click)='logout()' style="cursor: pointer;">
+                <i class="bi bi-arrow-left-circle"></i>
+                <span style="padding-left: 10px;"><strong>Sair</strong></span></a>
+           
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="navbar">
+
+    <div class="d-flex">
+       
+        <h3 style="margin-left: 20px;">Dashboard</h3>
+        <div style="margin-left: 30px;">
+            <button type="button" class="btn btn-outline-secondary">
+                <i class="bi bi-search"></i>
+                <span class="visually-hidden">Button</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div><h2>{{Saudacao}}</h2></div>
+
+    <div class="d-flex justify-content-end align-items-end">
+        <span style="margin-right: 30px;">
+            <button type="button" class="btn btn-secondary">
+                <i class="bi bi-bell-fill"></i>
+            </button>
+        </span>
+        <span class="d-flex" style="margin-right: 100px;">
+            <h4 style="margin-top: 10px; margin-right: 10px;">{{service.getadmDados()}}</h4>
+            <img src="https://i.pinimg.com/564x/5a/72/e1/5a72e1f05f9e2e1b76a8438a7490dc3b.jpg" width="50px"
+                class="rounded-circle float-right">
+
+        </span>
+
+    </div>
+</div>

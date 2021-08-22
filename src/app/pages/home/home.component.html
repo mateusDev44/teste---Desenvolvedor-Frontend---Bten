@@ -1,0 +1,59 @@
+<div class="container">
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+
+            <div class="card">
+                <h3>Unresolved</h3>
+                <h2>60</h2>
+            </div>
+
+        </div>
+        <div class="col">
+
+
+            <div class="card">
+                <h3>Overdue</h3>
+                <h2>16</h2>
+            </div>
+
+        </div>
+        <div class="col">
+
+            <div class="card">
+                <h3>Open</h3>
+                <h2>43</h2>
+            </div>
+
+
+        </div>
+        
+        <div class="col">
+
+            <div class="card">
+                <h3>On hold</h3>
+                <h2>64</h2>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="graficos mt-5">
+
+        <div style="text-align:center; margin-top: 20px;">
+            <apx-chart
+              [series]="chartOptions.series"
+              [chart]="chartOptions.chart"
+              [xaxis]="chartOptions.xaxis"
+              [title]="chartOptions.title"
+            ></apx-chart>
+
+          
+              
+          </div>
+    </div>
+
+
+</div>
